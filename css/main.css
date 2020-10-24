@@ -359,3 +359,9 @@ hr {
   border-top: 0;
   margin: var(--spacing) 0;
 }
+
+body {
+  width: 600px;
+  max-width: 95%;
+  margin: 50px auto;
+}
