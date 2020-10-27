@@ -1,3 +1,6 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,300,700);
+
 // Colors
 $blue: #1565c0;
 $blue-light: #3b83d5;
@@ -15,8 +18,8 @@ $viewport-background-color: $white;
 
 :root {
   // Typography
-  --font-family: system-ui, sans-serif;
-  --font-family--heading: var(--font-family);
+  --font-family: 'Ubuntu Mono', system-ui, sans-serif;
+  --font-family--heading: 'Quicksand', var(--font-family);
 
   --font-weight--thin: 100;
   --font-weight--extra-light: 200;

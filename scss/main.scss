@@ -5,6 +5,10 @@
 // bourbon and neat content should not be edited.
 // stylesheets with a more specific purpose should be imported below.
 
+html {
+	background: #1E1E1E;
+	color: white;
+}
 body {
 	width: 600px;
 	max-width: 95%;
