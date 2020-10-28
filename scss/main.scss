@@ -22,9 +22,28 @@ body {
 		font-family: 'Ubuntu Mono';
 		font-weight: 400;
 	}
-	p {
-		margin-bottom: 40px;
+	p,q {
 		font-size: 1.2rem;
+	}
+	p {
+		margin: 35px;
+	}
+	q {
+		display: block;
+		quotes: none;
+		padding: 12px 15px;
+		border-radius: 15px;
+		margin: 20px;
+	}
+	q.claire {
+		background: #FFF38F;
+		color: black;
+	}
+	q.brick {
+		background: #343145;
+	}
+	q.screen {
+		background: black;
 	}
 }
 .chapter-title {

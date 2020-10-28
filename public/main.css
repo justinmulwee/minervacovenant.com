@@ -383,9 +383,28 @@ body {
   font-family: "Ubuntu Mono";
   font-weight: 400;
 }
-.page p {
-  margin-bottom: 40px;
+.page p, .page q {
   font-size: 1.2rem;
+}
+.page p {
+  margin: 35px;
+}
+.page q {
+  display: block;
+  quotes: none;
+  padding: 12px 15px;
+  border-radius: 15px;
+  margin: 20px;
+}
+.page q.claire {
+  background: #FFF38F;
+  color: black;
+}
+.page q.brick {
+  background: #343145;
+}
+.page q.screen {
+  background: black;
 }
 
 .chapter-title span.chapter-number {
