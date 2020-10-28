@@ -346,6 +346,7 @@ a {
   -webkit-text-decoration-skip: ink;
           text-decoration-skip-ink: auto;
   transition: color var(--duration) var(--timing);
+  text-decoration: none;
 }
 a:hover {
   color: #3b83d5;
@@ -385,6 +386,7 @@ body {
 }
 .page p, .page q {
   font-size: 1.2rem;
+  position: relative;
 }
 .page p {
   margin: 35px;
@@ -396,12 +398,37 @@ body {
   border-radius: 15px;
   margin: 20px;
 }
+.page q.tagged span:first-child {
+  position: absolute;
+  text-align: right;
+  right: calc(100% + 40px);
+}
+.page q.tagged:before {
+  content: " ";
+  height: 2px;
+  width: 35px;
+  display: block;
+  left: -35px;
+  top: 50%;
+  position: absolute;
+}
 .page q.claire {
-  background: #FFF38F;
   color: black;
+}
+.page q.claire, .page q.claire.tagged:before {
+  background: #FFF38F;
+}
+.page q.claire span:first-child {
+  color: #FFF38F;
 }
 .page q.brick {
   background: #343145;
+}
+.page q.brick.tagged:before {
+  background: #706c84;
+}
+.page q.brick span:first-child {
+  color: #706c84;
 }
 .page q.screen {
   background: black;
@@ -409,7 +436,19 @@ body {
 
 .chapter-title span.chapter-number {
   font-size: 5rem;
+  color: #706c84;
 }
 .chapter-title h1 {
   font-size: 8rem;
+}
+
+.page.contents a {
+  font-size: 2em;
+  display: block;
+}
+.page.contents a.upcoming {
+  color: #666;
+}
+.page.contents a.mystery {
+  color: #333;
 }

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="author" content="Justin">
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="http://code.jquery.com/jquery-#{version}.min.js"></script>
+    <script>
+      $(document).ready(function(){ 
+      	var url = window.location.href;
+      	$('nav#primary a').filter(function() {
+      	    return this.href == url;
+      	}).addClass('current');
+      })
+    </script>
+    <title>Minerva Covenant</title>
+    <meta name="description" content="#{description}"/>
+  </head>
+  <body>
+    <header>
+      <nav id="primary"><a href="index.html">Minerva Covenant</a></nav>
+    </header>
+    <div class="page chapter-title">
+      <h1>Daughter <br> of a <br> Voice</h1>
+    </div>
+    <div class="page contents"><a href="chapter-1.html">01 - The Last Lights</a><a class="upcoming">02 - Shape of a Woman</a><a class="mystery">???</a></div>
+    <div class="page"><span>An in-progress science fiction novel by Justin Mulwee</span></div>
+    <footer></footer>
+  </body>
+</html>

@@ -25,6 +25,7 @@ a {
   color: $action-color;
   text-decoration-skip-ink: auto;
   transition: color var(--duration) var(--timing);
+  text-decoration: none;
 
   &:hover {
     color: $action-color--alt;
