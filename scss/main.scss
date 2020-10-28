@@ -14,3 +14,24 @@ body {
 	max-width: 95%;
 	margin: 50px auto;
 }
+.page {
+	margin: 200px auto;
+	h2 {
+		font-size: 9rem;
+		margin-left: -150px;
+		font-family: 'Ubuntu Mono';
+		font-weight: 400;
+	}
+	p {
+		margin-bottom: 40px;
+		font-size: 1.2rem;
+	}
+}
+.chapter-title {
+	span.chapter-number {
+		font-size: 5rem;
+	}
+	h1 {
+		font-size: 8rem;
+	}
+}

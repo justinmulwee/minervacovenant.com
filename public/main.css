@@ -1,8 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
 @import url(https://fonts.googleapis.com/css?family=Quicksand:400,300,700);
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
 :root {
-  --font-family: "Ubuntu Mono", system-ui, sans-serif;
-  --font-family--heading: "Quicksand", var(--font-family);
+  --font-family: "Ubuntu", system-ui, sans-serif;
+  --font-family--heading: var(--font-family);
   --font-weight--thin: 100;
   --font-weight--extra-light: 200;
   --font-weight--light: 300;
@@ -371,4 +372,25 @@ body {
   width: 600px;
   max-width: 95%;
   margin: 50px auto;
+}
+
+.page {
+  margin: 200px auto;
+}
+.page h2 {
+  font-size: 9rem;
+  margin-left: -150px;
+  font-family: "Ubuntu Mono";
+  font-weight: 400;
+}
+.page p {
+  margin-bottom: 40px;
+  font-size: 1.2rem;
+}
+
+.chapter-title span.chapter-number {
+  font-size: 5rem;
+}
+.chapter-title h1 {
+  font-size: 8rem;
 }
