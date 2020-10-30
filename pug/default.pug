@@ -9,6 +9,13 @@ html
 		meta(name='viewport', content='width=device-width, initial-scale=1')
 		+jquery('latest')
 		+highlight-current-nav-link
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-0X8E8TDPB9"></script>
+		script.
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-0X8E8TDPB9');
 		block head
 			+meta("Untitled", "no description")
 	body
