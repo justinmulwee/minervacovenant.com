@@ -370,9 +370,7 @@ html {
 }
 
 body {
-  width: 600px;
-  max-width: 95%;
-  margin: 50px auto;
+  margin: 0;
 }
 
 nav#primary {
@@ -392,6 +390,8 @@ a.giant {
 
 .page {
   margin: 200px auto;
+  width: 600px;
+  max-width: 95%;
 }
 .page h2 {
   font-size: 9rem;

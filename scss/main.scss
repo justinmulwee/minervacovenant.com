@@ -10,9 +10,10 @@ html {
 	color: white;
 }
 body {
-	width: 600px;
-	max-width: 95%;
-	margin: 50px auto;
+	// width: 600px;
+	// max-width: 95%;
+	// margin: 50px auto;
+	margin: 0;
 }
 nav#primary {
 	margin-bottom: 20px;
@@ -31,6 +32,8 @@ a.giant {
 }
 .page {
 	margin: 200px auto;
+	width: 600px;
+	max-width: 95%;
 	h2 {
 		font-size: 9rem;
 		margin-left: -150px;
