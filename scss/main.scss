@@ -40,6 +40,9 @@ a.giant {
 		font-family: 'Ubuntu Mono';
 		font-weight: 400;
 	}
+	h3 {
+		color: #806eb0;
+	}
 	p,q {
 		font-size: 1.2rem;
 		position: relative;
@@ -59,13 +62,14 @@ a.giant {
 			position: absolute;
 			text-align: right;
 			right: calc(100% + 40px);
+			width: 200px;
 		}
 		&:before {
 			content: ' ';
 			height: 2px;
 			width: 35px;
 			display: block;
-			left: -35px; top: 50%;
+			left: -35px; top: 27px;
 			position: absolute;
 		}
 	}
@@ -76,6 +80,15 @@ a.giant {
 		color: black;
 		span:first-child {
 			color: #FFF38F;
+		}
+	}
+	q.clemen {
+		&, &.tagged:before {
+			background: white;
+		}
+		color: black;
+		span:first-child {
+			color: white;
 		}
 	}
 	q.brick {
@@ -89,6 +102,37 @@ a.giant {
 			color: #706c84;
 		}
 		
+	}
+	q.sam {
+		&, &.tagged:before {
+			background: #D87EA8;
+		}
+		color: black;
+		span:first-child {
+			color: #D87EA8;
+		}
+	}
+	q.castor {
+		& {
+			background: #4949c1;
+		}
+		&.tagged:before {
+			background:#4949c1;
+		}
+		span:first-child {
+			color: #4949c1;
+		}
+	}
+	q.pollux {
+		& {
+			background: #6d4a85;
+		}
+		&.tagged:before {
+			background:#6d4a85;
+		}
+		span:first-child {
+			color: #6d4a85;
+		}
 	}
 	q.screen {
 		background: black;

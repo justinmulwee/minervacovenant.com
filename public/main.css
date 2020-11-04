@@ -284,8 +284,9 @@ figure {
 
 img,
 picture {
-  margin: 0;
-  max-width: 100%;
+  margin: auto;
+  max-width: 95%;
+  display: block;
 }
 
 table {
@@ -399,6 +400,9 @@ a.giant {
   font-family: "Ubuntu Mono";
   font-weight: 400;
 }
+.page h3 {
+  color: #806eb0;
+}
 .page p, .page q {
   font-size: 1.2rem;
   position: relative;
@@ -417,6 +421,7 @@ a.giant {
   position: absolute;
   text-align: right;
   right: calc(100% + 40px);
+  width: 200px;
 }
 .page q.tagged:before {
   content: " ";
@@ -424,7 +429,7 @@ a.giant {
   width: 35px;
   display: block;
   left: -35px;
-  top: 50%;
+  top: 27px;
   position: absolute;
 }
 .page q.claire {
@@ -436,6 +441,15 @@ a.giant {
 .page q.claire span:first-child {
   color: #FFF38F;
 }
+.page q.clemen {
+  color: black;
+}
+.page q.clemen, .page q.clemen.tagged:before {
+  background: white;
+}
+.page q.clemen span:first-child {
+  color: white;
+}
 .page q.brick {
   background: #343145;
 }
@@ -444,6 +458,33 @@ a.giant {
 }
 .page q.brick span:first-child {
   color: #706c84;
+}
+.page q.sam {
+  color: black;
+}
+.page q.sam, .page q.sam.tagged:before {
+  background: #D87EA8;
+}
+.page q.sam span:first-child {
+  color: #D87EA8;
+}
+.page q.castor {
+  background: #4949c1;
+}
+.page q.castor.tagged:before {
+  background: #4949c1;
+}
+.page q.castor span:first-child {
+  color: #4949c1;
+}
+.page q.pollux {
+  background: #6d4a85;
+}
+.page q.pollux.tagged:before {
+  background: #6d4a85;
+}
+.page q.pollux span:first-child {
+  color: #6d4a85;
 }
 .page q.screen {
   background: black;
