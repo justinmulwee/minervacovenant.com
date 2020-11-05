@@ -25,6 +25,14 @@ a.giant {
 	display: block;
 	margin: 30px 0px;
 }
+.big-image {
+	background-size: cover;
+	height: 100vh;
+	@media (min-width: 1000px) {
+		max-width: 95%;
+		margin: auto;
+	}
+}
 
 .page {
 	margin: 200px auto;
