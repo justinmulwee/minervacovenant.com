@@ -408,8 +408,12 @@ a.giant {
   color: #806eb0;
 }
 .page p, .page q {
-  font-size: 1.2rem;
   position: relative;
+}
+@media (min-width: 400px) {
+  .page p, .page q {
+    font-size: 1.2rem;
+  }
 }
 .page p {
   margin: 35px 15px;
@@ -506,6 +510,11 @@ a.giant {
   background: black;
 }
 
+@media (max-width: 849px) {
+  .chapter-title {
+    margin: 50px;
+  }
+}
 .chapter-title span.chapter-number {
   font-size: 2.5rem;
   color: #706c84;
@@ -524,13 +533,17 @@ a.giant {
   }
 }
 
-.page.contents a {
+.contents a {
   font-size: 2em;
   display: block;
 }
-.page.contents a.upcoming {
+.contents a.upcoming {
   color: #666;
 }
-.page.contents a.mystery {
+.contents a.mystery {
   color: #333;
+}
+
+.byline {
+  margin: 40px 0px;
 }
