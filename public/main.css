@@ -396,9 +396,13 @@ a.giant {
 }
 .page h2 {
   font-size: 9rem;
-  margin-left: -150px;
   font-family: "Ubuntu Mono";
   font-weight: 400;
+}
+@media (min-width: 850px) {
+  .page h2 {
+    margin-left: -150px;
+  }
 }
 .page h3 {
   color: #806eb0;
@@ -408,7 +412,7 @@ a.giant {
   position: relative;
 }
 .page p {
-  margin: 35px;
+  margin: 35px 15px;
 }
 .page q {
   display: block;
@@ -417,20 +421,32 @@ a.giant {
   border-radius: 15px;
   margin: 20px;
 }
-.page q.tagged span:first-child {
-  position: absolute;
-  text-align: right;
-  right: calc(100% + 40px);
-  width: 200px;
+@media (min-width: 850px) {
+  .page q.tagged span:first-child {
+    position: absolute;
+    text-align: right;
+    right: calc(100% + 40px);
+    width: 200px;
+  }
+  .page q.tagged:before {
+    content: " ";
+    height: 2px;
+    width: 35px;
+    display: block;
+    left: -35px;
+    top: 27px;
+    position: absolute;
+  }
 }
-.page q.tagged:before {
-  content: " ";
-  height: 2px;
-  width: 35px;
-  display: block;
-  left: -35px;
-  top: 27px;
-  position: absolute;
+@media (max-width: 849px) {
+  .page q.tagged {
+    margin-top: 50px;
+  }
+  .page q.tagged span:first-child {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+  }
 }
 .page q.claire {
   color: black;
@@ -475,7 +491,7 @@ a.giant {
   background: #4949c1;
 }
 .page q.castor span:first-child {
-  color: #4949c1;
+  color: #7f7fe9;
 }
 .page q.pollux {
   background: #6d4a85;
@@ -484,18 +500,28 @@ a.giant {
   background: #6d4a85;
 }
 .page q.pollux span:first-child {
-  color: #6d4a85;
+  color: #b082d0;
 }
 .page q.screen {
   background: black;
 }
 
 .chapter-title span.chapter-number {
-  font-size: 5rem;
+  font-size: 2.5rem;
   color: #706c84;
 }
+@media (min-width: 850px) {
+  .chapter-title span.chapter-number {
+    font-size: 5rem;
+  }
+}
 .chapter-title h1 {
-  font-size: 8rem;
+  font-size: 4rem;
+}
+@media (min-width: 850px) {
+  .chapter-title h1 {
+    font-size: 8rem;
+  }
 }
 
 .page.contents a {

@@ -30,13 +30,16 @@ a.giant {
 	margin: 30px 0px;
 	// margin-bottom: 80px;
 }
+
 .page {
 	margin: 200px auto;
 	width: 600px;
 	max-width: 95%;
 	h2 {
 		font-size: 9rem;
-		margin-left: -150px;
+		@media (min-width: 850px) {
+			margin-left: -150px;
+		}
 		font-family: 'Ubuntu Mono';
 		font-weight: 400;
 	}
@@ -48,7 +51,7 @@ a.giant {
 		position: relative;
 	}
 	p {
-		margin: 35px;
+		margin: 35px 15px;
 	}
 	q {
 		display: block;
@@ -57,20 +60,32 @@ a.giant {
 		border-radius: 15px;
 		margin: 20px;
 	}
-	q.tagged {
-		span:first-child {
-			position: absolute;
-			text-align: right;
-			right: calc(100% + 40px);
-			width: 200px;
+	@media (min-width: 850px) {
+		q.tagged {
+			span:first-child {
+				position: absolute;
+				text-align: right;
+				right: calc(100% + 40px);
+				width: 200px;
+			}
+			&:before {
+				content: ' ';
+				height: 2px;
+				width: 35px;
+				display: block;
+				left: -35px; top: 27px;
+				position: absolute;
+			}
 		}
-		&:before {
-			content: ' ';
-			height: 2px;
-			width: 35px;
-			display: block;
-			left: -35px; top: 27px;
-			position: absolute;
+	}
+	@media (max-width: 849px) {
+		q.tagged {
+			margin-top: 50px;
+			span:first-child {
+				position: absolute;
+				bottom: 100%;
+				left: 0;
+			}
 		}
 	}
 	q.claire {
@@ -120,7 +135,7 @@ a.giant {
 			background:#4949c1;
 		}
 		span:first-child {
-			color: #4949c1;
+			color: #7f7fe9;
 		}
 	}
 	q.pollux {
@@ -131,7 +146,7 @@ a.giant {
 			background:#6d4a85;
 		}
 		span:first-child {
-			color: #6d4a85;
+			color: #b082d0;
 		}
 	}
 	q.screen {
@@ -140,11 +155,17 @@ a.giant {
 }
 .chapter-title {
 	span.chapter-number {
-		font-size: 5rem;
+		font-size: 2.5rem;
+		@media (min-width: 850px) {
+			font-size: 5rem;
+		}
 		color: #706c84;
 	}
 	h1 {
-		font-size: 8rem;
+		font-size: 4rem;
+		@media (min-width: 850px) {
+			font-size: 8rem;
+		}
 	}
 }
 .page.contents {
