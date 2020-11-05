@@ -18,6 +18,9 @@ nav#primary {
 	a {
 		padding: 15px 30px;
 		display: inline-block;
+		@media (max-width: 530px) {
+			display: block;
+		}
 	}
 }
 a.giant {
@@ -113,13 +116,13 @@ a.giant {
 	}
 	q.brick {
 		& {
-			background: #343145;
+			background: #46425d;
 		}
 		&.tagged:before {
 			background:#706c84;
 		}
 		span:first-child {
-			color: #706c84;
+			color: #918da9;
 		}
 		
 	}
@@ -160,7 +163,8 @@ a.giant {
 }
 .chapter-title {
 	@media (max-width: 849px) {
-		margin: 50px;
+		margin: 50px auto;
+		padding: 0px 50px;
 	}
 	span.chapter-number {
 		font-size: 2.5rem;

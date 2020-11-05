@@ -382,6 +382,11 @@ nav#primary a {
   padding: 15px 30px;
   display: inline-block;
 }
+@media (max-width: 530px) {
+  nav#primary a {
+    display: block;
+  }
+}
 
 a.giant {
   font-size: 3.5rem;
@@ -482,13 +487,13 @@ a.giant {
   color: white;
 }
 .page q.brick {
-  background: #343145;
+  background: #46425d;
 }
 .page q.brick.tagged:before {
   background: #706c84;
 }
 .page q.brick span:first-child {
-  color: #706c84;
+  color: #918da9;
 }
 .page q.sam {
   color: black;
@@ -523,7 +528,8 @@ a.giant {
 
 @media (max-width: 849px) {
   .chapter-title {
-    margin: 50px;
+    margin: 50px auto;
+    padding: 0px 50px;
   }
 }
 .chapter-title span.chapter-number {
