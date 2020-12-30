@@ -162,27 +162,30 @@ a.giant {
 	}
 
 	q.burnside {
+		// color: black;
 		&, &.tagged:before {
-			background: #7b5353;
+			background: #7d4141;
 		}
 		span:first-child {
-			color: #7b5353;
+			color: #7d4141;
 		}
 	}
 	q.mitya {
+		// color: black;
 		&, &.tagged:before {
-			background: #5f526a;
+			background: #61526a;
 		}
 		span:first-child {
-			color: #5f526a;
+			color: #61526a;
 		}
 	}
 	q.lottie {
+		// color:black;
 		&, &.tagged:before {
-			background: #724554;
+			background: #7f536e;
 		}
 		span:first-child {
-			color: #724554;
+			color: #7f536e;
 		}
 	}
 }

@@ -526,22 +526,22 @@ a.giant {
   background: black;
 }
 .page q.burnside, .page q.burnside.tagged:before {
-  background: #7b5353;
+  background: #7d4141;
 }
 .page q.burnside span:first-child {
-  color: #7b5353;
+  color: #7d4141;
 }
 .page q.mitya, .page q.mitya.tagged:before {
-  background: #5f526a;
+  background: #61526a;
 }
 .page q.mitya span:first-child {
-  color: #5f526a;
+  color: #61526a;
 }
 .page q.lottie, .page q.lottie.tagged:before {
-  background: #724554;
+  background: #7f536e;
 }
 .page q.lottie span:first-child {
-  color: #724554;
+  color: #7f536e;
 }
 
 @media (max-width: 849px) {
