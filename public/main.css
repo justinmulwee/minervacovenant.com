@@ -525,6 +525,24 @@ a.giant {
 .page q.screen {
   background: black;
 }
+.page q.burnside, .page q.burnside.tagged:before {
+  background: #7b5353;
+}
+.page q.burnside span:first-child {
+  color: #7b5353;
+}
+.page q.mitya, .page q.mitya.tagged:before {
+  background: #5f526a;
+}
+.page q.mitya span:first-child {
+  color: #5f526a;
+}
+.page q.lottie, .page q.lottie.tagged:before {
+  background: #724554;
+}
+.page q.lottie span:first-child {
+  color: #724554;
+}
 
 @media (max-width: 849px) {
   .chapter-title {
@@ -563,4 +581,17 @@ a.giant {
 
 .byline {
   margin: 40px 0px;
+}
+
+.featherlight-content {
+  color: black;
+  width: 500px;
+}
+
+.lightbox {
+  display: none;
+}
+
+area:hover {
+  background: orange;
 }

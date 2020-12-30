@@ -160,6 +160,31 @@ a.giant {
 	q.screen {
 		background: black;
 	}
+
+	q.burnside {
+		&, &.tagged:before {
+			background: #7b5353;
+		}
+		span:first-child {
+			color: #7b5353;
+		}
+	}
+	q.mitya {
+		&, &.tagged:before {
+			background: #5f526a;
+		}
+		span:first-child {
+			color: #5f526a;
+		}
+	}
+	q.lottie {
+		&, &.tagged:before {
+			background: #724554;
+		}
+		span:first-child {
+			color: #724554;
+		}
+	}
 }
 .chapter-title {
 	@media (max-width: 849px) {
@@ -196,4 +221,14 @@ a.giant {
 }
 .byline {
 	margin: 40px 0px;
+}
+.featherlight-content {
+	color: black;
+	width: 500px;
+}
+.lightbox {
+	display: none;
+}
+area:hover {
+	background: orange;
 }
