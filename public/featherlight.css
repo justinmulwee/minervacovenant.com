@@ -8,7 +8,7 @@
 
 html.with-featherlight {
 	/* disable global scrolling when featherlights are visible */
-	overflow: hidden;
+	/* overflow: hidden; */
 }
 
 .featherlight {
@@ -56,7 +56,7 @@ html.with-featherlight {
 
 	/* dimensions: cut off images */
 	overflow: auto;
-	padding: 25px 25px 0;
+	padding: 35px 35px 0;
 	border-bottom: 25px solid transparent;
 
 	/* dimensions: handling large content */
@@ -65,8 +65,11 @@ html.with-featherlight {
 	max-height: 95%;
 
 	/* styling */
-	background: #fff;
+	/* background: #fff; */
 	cursor: auto;
+	color: white;
+	background: #5e5a75;
+	font-size: 1.2rem;
 
 	/* reset white-space wrapping */
 	white-space: normal;

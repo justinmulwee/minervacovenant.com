@@ -32,7 +32,6 @@ button,
 [type=reset],
 [type=submit] {
   -webkit-appearance: none;
-     -moz-appearance: none;
           appearance: none;
   background-color: #b5bdff;
   border: 0;
@@ -124,7 +123,6 @@ textarea {
 input:not([type]),
 textarea {
   -webkit-appearance: none;
-     -moz-appearance: none;
           appearance: none;
   background-color: transparent;
   border: var(--border);
@@ -370,6 +368,10 @@ html {
   color: white;
 }
 
+html {
+  margin-left: calc(100vw - 100%);
+}
+
 body {
   margin: 0;
 }
@@ -486,14 +488,20 @@ a.giant {
 .page q.clemen span:first-child {
   color: white;
 }
-.page q.brick {
+.page q.notbrick {
   background: #46425d;
 }
-.page q.brick.tagged:before {
+.page q.notbrick.tagged:before {
   background: #706c84;
 }
-.page q.brick span:first-child {
+.page q.notbrick span:first-child {
   color: #918da9;
+}
+.page q.brick, .page q.brick.tagged:before {
+  background: black;
+}
+.page q.brick span:first-child {
+  color: gray;
 }
 .page q.sam {
   color: black;
@@ -541,6 +549,12 @@ a.giant {
   background: #7f536e;
 }
 .page q.lottie span:first-child {
+  color: #7f536e;
+}
+.page q.doc, .page q.doc.tagged:before {
+  background: #483c4c;
+}
+.page q.doc span:first-child {
   color: #7f536e;
 }
 
@@ -594,4 +608,61 @@ a.giant {
 
 area:hover {
   background: orange;
+}
+
+#heidis-room {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#heidis-room a {
+  padding: 20px;
+  width: 49%;
+  margin-top: 2%;
+  background: #5e5a75;
+  border-radius: 3px;
+}
+#heidis-room a:hover {
+  background: gold;
+  color: black;
+  font-weight: bold;
+}
+
+.phone {
+  background: #6C6C6C;
+  border-radius: 20px;
+  margin: auto;
+  width: 400px;
+  max-width: 100%;
+  height: 800px;
+  padding: 20px;
+}
+.phone .screen {
+  background: #2A3733;
+  height: 760px;
+  border-radius: 25px;
+  padding: 3px;
+  overflow-y: scroll;
+}
+.phone audio {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+}
+.phone #call-history li {
+  margin-bottom: 3px;
+  padding: 10px 15px;
+  padding-bottom: 25px;
+}
+.phone #call-history .missed {
+  background: #65464c;
+}
+.phone #call-history .outgoing, .phone #call-history .received {
+  background: #626f62;
+}
+.phone #call-history .name {
+  font-size: 1.3rem;
+}
+.phone #call-history .timestamp {
+  display: block;
 }
