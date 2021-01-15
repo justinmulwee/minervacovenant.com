@@ -454,35 +454,59 @@ block content
 	.page
 		h2 12
 		.phone
+			.screen-wrapper
+				//- p this is some phone content. i'll have to think about what goes in here. and reference an actual interface.
+				.screen.menu
+					//- p screen 1
+					button.calls Calls
+					button.texts Texts
+				.screen.calls.offscreen
+					//- h3 Call History
+					ul#call-history
+						li.missed
+							span.name Clemen
+							span.timestamp Missed 12 days ago / Voicemail
+							audio(controls src="clemen2.m4a")
+						li.missed
+							span.name Clemen
+							span.timestamp Missed 11 days ago
+						li.missed
+							span.name Nathaniel
+							span.timestamp Missed 10 days ago
+							audio(controls src="voicemail-nathaniel.mp3")
+						li.missed
+							span.name Clemen
+							span.timestamp Missed 9 days ago / Voicemail
+							audio(controls src="clemen1.m4a")
+						li.missed
+							span.name Clemen
+							span.timestamp Missed 9 days ago
+						li.outgoing
+							span.name 8453849567
+							span.timestamp Outgoing 9 days ago (25 mins)
+						li.missed
+							span.name Clemen
+							span.timestamp Missed 9 days ago
+					button.close-calls Back
+				.screen.texts.offscreen
+					p screen 2
+					button.close-texts Back
+			script.
+				$(document).ready(function(){
+					$("button.calls").click(function(){
+						$(".screen.calls").removeClass("offscreen");
+					});
+					$("button.texts").click(function(){
+						$(".screen.texts").removeClass("offscreen");
+					});
+					$("button.close-calls").click(function(){
+						$(".screen.calls").addClass("offscreen");
+					});
+					$("button.close-texts").click(function(){
+						$(".screen.texts").addClass("offscreen");
+					});
+				});
 
-			//- p this is some phone content. i'll have to think about what goes in here. and reference an actual interface.
-			.screen
-				h3 Call History
-				ul#call-history
-					li.missed
-						span.name Clemen
-						span.timestamp Missed 12 days ago / Voicemail
-						audio(controls src="clemen2.m4a")
-					li.missed
-						span.name Clemen
-						span.timestamp Missed 11 days ago
-					li.missed
-						span.name Nathaniel
-						span.timestamp Missed 10 days ago
-						audio(controls src="voicemail-nathaniel.mp3")
-					li.missed
-						span.name Clemen
-						span.timestamp Missed 9 days ago / Voicemail
-						audio(controls src="clemen1.m4a")
-					li.missed
-						span.name Clemen
-						span.timestamp Missed 9 days ago
-					li.outgoing
-						span.name 8453849567
-						span.timestamp Outgoing 9 days ago (25 mins)
-					li.missed
-						span.name Clemen
-						span.timestamp Missed 9 days ago
 					
 	.page
 		h2 13 police database page
