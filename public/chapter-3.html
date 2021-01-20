@@ -276,11 +276,29 @@
               <li class="outgoing"><span class="name">8453849567</span><span class="timestamp">Outgoing 9 days ago (25 mins)</span></li>
               <li class="missed"><span class="name">Clemen</span><span class="timestamp">Missed 9 days ago</span></li>
             </ul>
-            <button class="close-calls">Back</button>
+            <button class="back close-calls">Back</button>
           </div>
           <div class="screen texts offscreen">
-            <p>screen 2</p>
-            <button class="close-texts">Back</button>
+            <ul id="text-history">
+              <li class="unread" id="clemen"><span class="name">Clemen</span><span class="preview">Well that's cool that they're still growing</span></li>
+              <li class="unread" id="nathaniel"><span class="name">Nathaniel</span><span class="preview">I can bring them by sometime next week</span></li>
+              <li class="read"><span class="name">Zhang</span><span class="preview">I can bring them by sometime next week</span></li>
+              <li class="read" id="elizabeth-preview"><span class="name">Elizabeth</span><span class="preview">I can bring them by sometime next week</span></li>
+            </ul>
+            <button class="back close-texts">Back</button>
+          </div>
+          <div class="screen text-thread offscreen" id="clemen">
+            <div class="thread">
+              <q class="other">Hey whats up?</q>
+              <q class="heidi">Nothing much.</q>
+            </div>
+          </div>
+          <div class="screen text-thread offscreen" id="elizabeth">
+            <div class="thread">
+              <q class="other">for your lesson.</q>
+              <q class="heidi">I'll be there.</q>
+            </div>
+            <button class="back close-thread">Back</button>
           </div>
         </div>
         <script>
@@ -296,6 +314,12 @@
           	});
           	$("button.close-texts").click(function(){
           		$(".screen.texts").addClass("offscreen");
+          	});
+          	$("#elizabeth-preview").click(function(){
+          		$(".screen#elizabeth").removeClass("offscreen");
+          	});
+          	$("button.close-thread").click(function(){
+          		$(".screen.text-thread").addClass("offscreen");
           	});
           });
           

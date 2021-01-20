@@ -646,24 +646,36 @@ area:hover {
   overflow: hidden;
   position: relative;
 }
-.phone .menu button {
+.phone button {
   background: transparent;
-  border-radius: 100px;
-  height: 150px;
-  width: 150px;
   border: 3px solid #F6CF1C;
   color: #F6CF1C;
-  display: block;
-  margin: 30px auto;
-  font-size: 1.4rem;
   outline: none;
 }
-.phone .menu button:active {
+.phone button:active {
   background: #F6CF1C;
   color: black;
 }
+.phone .menu button {
+  border-radius: 100px;
+  height: 150px;
+  width: 150px;
+  display: block;
+  margin: 30px auto;
+  font-size: 1.4rem;
+}
 .phone .menu button.calls {
   margin-top: 200px;
+}
+.phone button.back {
+  height: 55px;
+  width: 55px;
+  border-radius: 70px;
+  margin: auto;
+  display: block;
+  padding: 0;
+  font-size: 0.8rem;
+  margin-top: 10px;
 }
 .phone .screen {
   width: 360px;
@@ -673,12 +685,12 @@ area:hover {
   transition: 0.2s;
   background: #2A3733;
 }
-.phone .screen.calls, .phone .screen.texts {
+.phone .screen {
   position: absolute;
   top: 0px;
   left: 0px;
 }
-.phone .screen.calls.offscreen, .phone .screen.texts.offscreen {
+.phone .screen.offscreen {
   left: 102%;
 }
 .phone audio {
@@ -686,24 +698,30 @@ area:hover {
   width: 100%;
   margin-top: 10px;
 }
-.phone #call-history {
-  height: 700px;
+.phone #call-history, .phone #text-history, .phone .thread {
+  height: 680px;
   overflow-y: scroll;
 }
-.phone #call-history li {
+.phone #call-history li, .phone #text-history li, .phone .thread li {
   margin-bottom: 3px;
   padding: 10px 15px;
   padding-bottom: 25px;
 }
-.phone #call-history .missed {
+.phone #call-history .missed, .phone #text-history .missed, .phone .thread .missed {
   background: #65464c;
 }
-.phone #call-history .outgoing, .phone #call-history .received {
+.phone #call-history .outgoing, .phone #call-history .received, .phone #text-history .outgoing, .phone #text-history .received, .phone .thread .outgoing, .phone .thread .received {
   background: #626f62;
 }
-.phone #call-history .name {
+.phone #call-history .unread, .phone #text-history .unread, .phone .thread .unread {
+  background: goldenrod;
+}
+.phone #call-history .name, .phone #text-history .name, .phone .thread .name {
   font-size: 1.3rem;
 }
-.phone #call-history .timestamp {
+.phone #call-history .preview, .phone #text-history .preview, .phone .thread .preview {
+  display: block;
+}
+.phone #call-history .timestamp, .phone #text-history .timestamp, .phone .thread .timestamp {
   display: block;
 }

@@ -290,24 +290,41 @@ area:hover {
 		overflow: hidden;
 		position: relative;	
 	}
-	.menu button {
+	button {
 		background: transparent;
-		border-radius: 100px;
-		height: 150px;
-		width: 150px;
 		border: 3px solid #F6CF1C;
-		color: #F6CF1C;
-		display: block;
-		margin: 30px auto;
-		font-size: 1.4rem;
+		color: #F6CF1C;	
 		outline: none;
 		&:active {
 			background: #F6CF1C;
 			color: black;
 		}
+	}
+	.menu button {
+		// background: transparent;
+		border-radius: 100px;
+		height: 150px;
+		width: 150px;
+		// border: 3px solid #F6CF1C;
+		// color: #F6CF1C;
+		display: block;
+		margin: 30px auto;
+		font-size: 1.4rem;
+		
+
 		&.calls {
 			margin-top: 200px;
 		}
+	}
+	button.back {
+		height: 55px;
+		width: 55px;
+		border-radius: 70px;
+		margin: auto;
+		display: block;
+		padding: 0;
+		font-size: 0.8rem;
+		margin-top: 10px;
 	}
 	.screen {
 		width: 360px;
@@ -317,7 +334,7 @@ area:hover {
 		transition: .2s;
 		background: #2A3733;
 	}
-	.screen.calls, .screen.texts {
+	.screen {
 		position: absolute;
 		top: 0px;
 		left: 0px;
@@ -336,9 +353,9 @@ area:hover {
 		width: 100%;
 		margin-top: 10px;
 	}
-	#call-history {
+	#call-history, #text-history, .thread {
 		// color: black;
-		height: 700px;
+		height: 680px;
 		overflow-y: scroll;
 		li {
 			margin-bottom: 3px;
@@ -352,8 +369,14 @@ area:hover {
 		.outgoing, .received {
 			background: #626f62;
 		}
+		.unread {
+			background: goldenrod;
+		}
 		.name {
 			font-size: 1.3rem;
+		}
+		.preview {
+			display: block;
 		}
 		.timestamp {
 			display: block;

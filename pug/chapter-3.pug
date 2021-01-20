@@ -487,10 +487,31 @@ block content
 						li.missed
 							span.name Clemen
 							span.timestamp Missed 9 days ago
-					button.close-calls Back
+					button.back.close-calls Back
 				.screen.texts.offscreen
-					p screen 2
-					button.close-texts Back
+					ul#text-history
+						li.unread#clemen
+							span.name Clemen
+							span.preview Well that's cool that they're still growing
+						li.unread#nathaniel
+							span.name Nathaniel
+							span.preview I can bring them by sometime next week
+						li.read
+							span.name Zhang
+							span.preview I can bring them by sometime next week
+						li.read#elizabeth-preview
+							span.name Elizabeth
+							span.preview I can bring them by sometime next week
+					button.back.close-texts Back
+				.screen.text-thread.offscreen#clemen
+					.thread
+						q.other Hey whats up?
+						q.heidi Nothing much.
+				.screen.text-thread.offscreen#elizabeth
+					.thread
+						q.other for your lesson.
+						q.heidi I'll be there.
+					button.back.close-thread Back
 			script.
 				$(document).ready(function(){
 					$("button.calls").click(function(){
@@ -504,6 +525,12 @@ block content
 					});
 					$("button.close-texts").click(function(){
 						$(".screen.texts").addClass("offscreen");
+					});
+					$("#elizabeth-preview").click(function(){
+						$(".screen#elizabeth").removeClass("offscreen");
+					});
+					$("button.close-thread").click(function(){
+						$(".screen.text-thread").addClass("offscreen");
 					});
 				});
 
