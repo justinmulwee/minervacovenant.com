@@ -11,7 +11,7 @@ block content
 	//- .big-image(style="background-image: url('chapter2.webp'); background-position: 54% 50%;")
 	.page
 		h2 XX
-		p I ain't done writing this chapter yet!
+		p Rough draft finished. Needs editing.
 	.page
 		h2 01
 		p Two months ago, there was a knock at the door of the clinic. Brick peeked through the hole to see three people: a big Russian guy. A tall, skinny woman who was obviously trying to suppress a smile. And a serious looking guy with a military haircut. Brick opened the door. It was the serious looking guy who spoke.
@@ -482,7 +482,7 @@ block content
 							span.name Clemen
 							span.timestamp Missed 9 days ago
 						li.outgoing
-							span.name 8453849567
+							span.name Zhang
 							span.timestamp Outgoing 9 days ago (25 mins)
 						li.missed
 							span.name Clemen
@@ -490,28 +490,83 @@ block content
 					button.back.close-calls Back
 				.screen.texts.offscreen
 					ul#text-history
-						li.unread#clemen
+						li.unread#clemen-preview
 							span.name Clemen
-							span.preview Well that's cool that they're still growing
-						li.unread#nathaniel
+							span.preview I left you a message.
+						li.unread#nathaniel-preview
 							span.name Nathaniel
 							span.preview I can bring them by sometime next week
-						li.read
-							span.name Zhang
-							span.preview I can bring them by sometime next week
+						li.read#zhang-preview
+							span.name David
+							span.preview You won't regret it.
 						li.read#elizabeth-preview
 							span.name Elizabeth
-							span.preview I can bring them by sometime next week
+							span.preview You: here
 					button.back.close-texts Back
 				.screen.text-thread.offscreen#clemen
 					.thread
-						q.other Hey whats up?
-						q.heidi Nothing much.
+						h3 Clemen
+						span.timestamp 11 days ago
+						.other: q You coming back today?
+						span.timestamp 10 days ago
+						.other: q Come home. This is getting ridiculous.
+						.other: q I left you a message.
+					button.back.close-thread Back
+				.screen.text-thread.offscreen#nathaniel
+					.thread
+						h3 Nathaniel
+						.heidi: q Clemen decided he doesn't want to be a part of your project. Sorry, he's a very private person. It was nice to meet you, though.
+						.other: q Okay. But let's talk for a minute.
+						span.timestamp 18 days ago
+						.heidi: q I'm Here.
+						.other: q It's me again. Can we talk?
+
+					button.back.close-thread Back
+				.screen.text-thread.offscreen#zhang
+					.thread
+						h3 David
+						.heidi: q Thanks for the talk.
+						.other: q Sure. Let's finish that conversation in person. Cybil's at 6 tomorrow?
+						.heidi: q Okay.
+						span.timestamp 11 days ago
+						.other
+							q This is an automated message confirming your appointment at 10am. 
+							q Just kidding. I'll see you soon.
+							q You won't regret it.
+					button.back.close-thread Back
 				.screen.text-thread.offscreen#elizabeth
 					.thread
-						q.other for your lesson.
-						q.heidi I'll be there.
+						h3 Elizabeth
+						span.timestamp 22 days ago
+						.other
+							q I'm excited. Haven't had a promising young protige in a while. Are fridays good for you?
+						.heidi
+							q Yes.
+						.other
+							q Same time next week, then.
+						span.timestamp 15 days ago
+						.other 
+							q We on for today?
+						.heidi 
+							q Yeah. 6pm?
+						.other 
+							q Great.
+						.heidi 
+							q Here.
+
+						span.timestamp 8 days ago
+						.heidi 
+							q Here.
+						.other
+							q Coming.
+						span.timestamp 8 days ago
+						.other
+							q You still coming this week?
+						span.timestamp 5 days ago
+						.other
+							q Everything ok?
 					button.back.close-thread Back
+				
 			script.
 				$(document).ready(function(){
 					$("button.calls").click(function(){
@@ -529,6 +584,15 @@ block content
 					$("#elizabeth-preview").click(function(){
 						$(".screen#elizabeth").removeClass("offscreen");
 					});
+					$("#clemen-preview").click(function(){
+						$(".screen#clemen").removeClass("offscreen");
+					});
+					$("#zhang-preview").click(function(){
+						$(".screen#zhang").removeClass("offscreen");
+					});
+					$("#nathaniel-preview").click(function(){
+						$(".screen#nathaniel").removeClass("offscreen");
+					});
 					$("button.close-thread").click(function(){
 						$(".screen.text-thread").addClass("offscreen");
 					});
@@ -536,7 +600,18 @@ block content
 
 					
 	.page
-		h2 13 police database page
+		h2 13
+		p It was Brick's policy to gather as much information as possible before talking to anyone involved. Otherwise he ran the risk of letting people know they were being investigated too early. That went for the various people Heidi had been messaging, and more importantly, Heidi herself. And, of course, Clemen. 
+		p On the surface at least, it would make little sense for Clemen to hire an investigator if he was responsible for the situation, but it was his policy to gather all the facts in proximity to the matter at hand, not just those that seemed related by motive.
+		p To that end, he went to his computer and navigated to the Caldera Police database. He hesitated a moment in thought, then entered his old credentials. 
+		q.screen.tagged
+			span Error Message
+			span This account is no longer active. If you believe this is an error, please contact your administrator.
+		p Of course. He didn't expect his credentials to still work. At this point, he had two loosely related thoughts.
+		ol
+			li He imagined himself asking Burnside if he could get him database access. He hated the idea.
+			li He wondered if the pastry shop on the top level was still in business.
+
 	.page
 		h2 14 
 		p Brick made some dinner, such as it was, from the redroot in the fridge, and cleaned his single dish. The clinic was completely silent, as usual. He'd been afraid Samantha would crowd him, but she'd been gone for hours. He entertained the thought that she wouldn't come back at all.

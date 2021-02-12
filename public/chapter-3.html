@@ -37,7 +37,7 @@
     </div>
     <div class="page">
       <h2>XX</h2>
-      <p>I ain't done writing this chapter yet!</p>
+      <p>Rough draft finished. Needs editing.</p>
     </div>
     <div class="page">
       <h2>01</h2>
@@ -273,30 +273,109 @@
                 <audio controls src="clemen1.m4a"></audio>
               </li>
               <li class="missed"><span class="name">Clemen</span><span class="timestamp">Missed 9 days ago</span></li>
-              <li class="outgoing"><span class="name">8453849567</span><span class="timestamp">Outgoing 9 days ago (25 mins)</span></li>
+              <li class="outgoing"><span class="name">Zhang</span><span class="timestamp">Outgoing 9 days ago (25 mins)</span></li>
               <li class="missed"><span class="name">Clemen</span><span class="timestamp">Missed 9 days ago</span></li>
             </ul>
             <button class="back close-calls">Back</button>
           </div>
           <div class="screen texts offscreen">
             <ul id="text-history">
-              <li class="unread" id="clemen"><span class="name">Clemen</span><span class="preview">Well that's cool that they're still growing</span></li>
-              <li class="unread" id="nathaniel"><span class="name">Nathaniel</span><span class="preview">I can bring them by sometime next week</span></li>
-              <li class="read"><span class="name">Zhang</span><span class="preview">I can bring them by sometime next week</span></li>
-              <li class="read" id="elizabeth-preview"><span class="name">Elizabeth</span><span class="preview">I can bring them by sometime next week</span></li>
+              <li class="unread" id="clemen-preview"><span class="name">Clemen</span><span class="preview">I left you a message.</span></li>
+              <li class="unread" id="nathaniel-preview"><span class="name">Nathaniel</span><span class="preview">I can bring them by sometime next week</span></li>
+              <li class="read" id="zhang-preview"><span class="name">David</span><span class="preview">You won't regret it.</span></li>
+              <li class="read" id="elizabeth-preview"><span class="name">Elizabeth</span><span class="preview">You: here</span></li>
             </ul>
             <button class="back close-texts">Back</button>
           </div>
           <div class="screen text-thread offscreen" id="clemen">
             <div class="thread">
-              <q class="other">Hey whats up?</q>
-              <q class="heidi">Nothing much.</q>
+              <h3>Clemen</h3><span class="timestamp">11 days ago</span>
+              <div class="other">
+                <q>You coming back today?</q>
+              </div><span class="timestamp">10 days ago</span>
+              <div class="other">
+                <q>Come home. This is getting ridiculous.</q>
+              </div>
+              <div class="other">
+                <q>I left you a message.</q>
+              </div>
             </div>
+            <button class="back close-thread">Back</button>
+          </div>
+          <div class="screen text-thread offscreen" id="nathaniel">
+            <div class="thread">
+              <h3>Nathaniel</h3>
+              <div class="heidi">
+                <q>Clemen decided he doesn't want to be a part of your project. Sorry, he's a very private person. It was nice to meet you, though.</q>
+              </div>
+              <div class="other">
+                <q>Okay. But let's talk for a minute.</q>
+              </div><span class="timestamp">18 days ago</span>
+              <div class="heidi">
+                <q>I'm Here.</q>
+              </div>
+              <div class="other">
+                <q>It's me again. Can we talk?</q>
+              </div>
+            </div>
+            <button class="back close-thread">Back</button>
+          </div>
+          <div class="screen text-thread offscreen" id="zhang">
+            <div class="thread">
+              <h3>David</h3>
+              <div class="heidi">
+                <q>Thanks for the talk.</q>
+              </div>
+              <div class="other">
+                <q>Sure. Let's finish that conversation in person. Cybil's at 6 tomorrow?</q>
+              </div>
+              <div class="heidi">
+                <q>Okay.</q>
+              </div><span class="timestamp">11 days ago</span>
+              <div class="other">
+                <q>This is an automated message confirming your appointment at 10am. </q>
+                <q>Just kidding. I'll see you soon.</q>
+                <q>You won't regret it.</q>
+              </div>
+            </div>
+            <button class="back close-thread">Back</button>
           </div>
           <div class="screen text-thread offscreen" id="elizabeth">
             <div class="thread">
-              <q class="other">for your lesson.</q>
-              <q class="heidi">I'll be there.</q>
+              <h3>Elizabeth</h3><span class="timestamp">22 days ago</span>
+              <div class="other">
+                <q>I'm excited. Haven't had a promising young protige in a while. Are fridays good for you?</q>
+              </div>
+              <div class="heidi">
+                <q>Yes.</q>
+              </div>
+              <div class="other">
+                <q>Same time next week, then.</q>
+              </div><span class="timestamp">15 days ago</span>
+              <div class="other"> 
+                <q>We on for today?</q>
+              </div>
+              <div class="heidi"> 
+                <q>Yeah. 6pm?</q>
+              </div>
+              <div class="other"> 
+                <q>Great.</q>
+              </div>
+              <div class="heidi"> 
+                <q>Here.</q>
+              </div><span class="timestamp">8 days ago</span>
+              <div class="heidi"> 
+                <q>Here.</q>
+              </div>
+              <div class="other">
+                <q>Coming.</q>
+              </div><span class="timestamp">8 days ago</span>
+              <div class="other">
+                <q>You still coming this week?</q>
+              </div><span class="timestamp">5 days ago</span>
+              <div class="other">
+                <q>Everything ok?</q>
+              </div>
             </div>
             <button class="back close-thread">Back</button>
           </div>
@@ -318,6 +397,15 @@
           	$("#elizabeth-preview").click(function(){
           		$(".screen#elizabeth").removeClass("offscreen");
           	});
+          	$("#clemen-preview").click(function(){
+          		$(".screen#clemen").removeClass("offscreen");
+          	});
+          	$("#zhang-preview").click(function(){
+          		$(".screen#zhang").removeClass("offscreen");
+          	});
+          	$("#nathaniel-preview").click(function(){
+          		$(".screen#nathaniel").removeClass("offscreen");
+          	});
           	$("button.close-thread").click(function(){
           		$(".screen.text-thread").addClass("offscreen");
           	});
@@ -328,7 +416,16 @@
       </div>
     </div>
     <div class="page">
-      <h2>13 police database page</h2>
+      <h2>13</h2>
+      <p>It was Brick's policy to gather as much information as possible before talking to anyone involved. Otherwise he ran the risk of letting people know they were being investigated too early. That went for the various people Heidi had been messaging, and more importantly, Heidi herself. And, of course, Clemen. </p>
+      <p>On the surface at least, it would make little sense for Clemen to hire an investigator if he was responsible for the situation, but it was his policy to gather all the facts in proximity to the matter at hand, not just those that seemed related by motive.</p>
+      <p>To that end, he went to his computer and navigated to the Caldera Police database. He hesitated a moment in thought, then entered his old credentials. </p>
+      <q class="screen tagged"><span>Error Message</span><span>This account is no longer active. If you believe this is an error, please contact your administrator.</span></q>
+      <p>Of course. He didn't expect his credentials to still work. At this point, he had two loosely related thoughts.</p>
+      <ol>
+        <li>He imagined himself asking Burnside if he could get him database access. He hated the idea.</li>
+        <li>He wondered if the pastry shop on the top level was still in business.</li>
+      </ol>
     </div>
     <div class="page">
       <h2>14 </h2>

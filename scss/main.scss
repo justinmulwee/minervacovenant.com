@@ -353,10 +353,39 @@ area:hover {
 		width: 100%;
 		margin-top: 10px;
 	}
+	q {
+		display: inline-block;
+		margin: 8px;
+		border-radius: 20px;
+		padding: 8px 20px;
+	}
+	.heidi {
+		text-align: right;
+	}
+
+	.other q {
+		background: gray;
+	}
+	.heidi q {
+		background: #F6CF1C;
+		color: black;
+	}
+	.text-thread .timestamp {
+		display: block;
+		text-align: center;
+		margin-top: 30px;
+		font-size: .8rem;
+	}
 	#call-history, #text-history, .thread {
 		// color: black;
 		height: 680px;
 		overflow-y: scroll;
+		border-radius: 22px 22px 0px 0px;
+		h3 {
+			color: white;
+			padding: 15px;
+			font-size: 2rem;
+		}
 		li {
 			margin-bottom: 3px;
 			padding: 10px 15px;
@@ -364,10 +393,12 @@ area:hover {
 			// border-bottom: 3px solid black;
 		}
 		.missed {
-			background: #65464c;
+			// background: #65464c;
+			background: #8C5664;
 		}
 		.outgoing, .received {
-			background: #626f62;
+			// background: #626f62;
+			background: #73948A;
 		}
 		.unread {
 			background: goldenrod;
@@ -377,9 +408,26 @@ area:hover {
 		}
 		.preview {
 			display: block;
+			cursor: pointer;
 		}
 		.timestamp {
 			display: block;
+		}
+		.read {
+			background: #4e4e4e;
+		}
+		.unread {
+			background: #6a6a6a;
+			font-weight: bold;
+			.name::after {
+				content: '';
+				border-radius: 10px;
+				width: 10px;
+				height: 10px;
+				background: gold;
+				display: inline-block;
+				margin-left: 10px;
+			}
 		}
 	}
 }

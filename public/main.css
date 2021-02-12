@@ -698,9 +698,37 @@ area:hover {
   width: 100%;
   margin-top: 10px;
 }
+.phone q {
+  display: inline-block;
+  margin: 8px;
+  border-radius: 20px;
+  padding: 8px 20px;
+}
+.phone .heidi {
+  text-align: right;
+}
+.phone .other q {
+  background: gray;
+}
+.phone .heidi q {
+  background: #F6CF1C;
+  color: black;
+}
+.phone .text-thread .timestamp {
+  display: block;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.8rem;
+}
 .phone #call-history, .phone #text-history, .phone .thread {
   height: 680px;
   overflow-y: scroll;
+  border-radius: 22px 22px 0px 0px;
+}
+.phone #call-history h3, .phone #text-history h3, .phone .thread h3 {
+  color: white;
+  padding: 15px;
+  font-size: 2rem;
 }
 .phone #call-history li, .phone #text-history li, .phone .thread li {
   margin-bottom: 3px;
@@ -708,10 +736,10 @@ area:hover {
   padding-bottom: 25px;
 }
 .phone #call-history .missed, .phone #text-history .missed, .phone .thread .missed {
-  background: #65464c;
+  background: #8C5664;
 }
 .phone #call-history .outgoing, .phone #call-history .received, .phone #text-history .outgoing, .phone #text-history .received, .phone .thread .outgoing, .phone .thread .received {
-  background: #626f62;
+  background: #73948A;
 }
 .phone #call-history .unread, .phone #text-history .unread, .phone .thread .unread {
   background: goldenrod;
@@ -721,7 +749,24 @@ area:hover {
 }
 .phone #call-history .preview, .phone #text-history .preview, .phone .thread .preview {
   display: block;
+  cursor: pointer;
 }
 .phone #call-history .timestamp, .phone #text-history .timestamp, .phone .thread .timestamp {
   display: block;
+}
+.phone #call-history .read, .phone #text-history .read, .phone .thread .read {
+  background: #4e4e4e;
+}
+.phone #call-history .unread, .phone #text-history .unread, .phone .thread .unread {
+  background: #6a6a6a;
+  font-weight: bold;
+}
+.phone #call-history .unread .name::after, .phone #text-history .unread .name::after, .phone .thread .unread .name::after {
+  content: "";
+  border-radius: 10px;
+  width: 10px;
+  height: 10px;
+  background: gold;
+  display: inline-block;
+  margin-left: 10px;
 }
