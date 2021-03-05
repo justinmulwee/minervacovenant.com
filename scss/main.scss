@@ -166,7 +166,7 @@ a.giant {
 		}
 	}
 	q.screen {
-		background: black;
+		background: rgb(38, 39, 38);
 	}
 
 	q.burnside {
@@ -252,6 +252,15 @@ area:hover {
 	background: orange;
 }
 
+ol {
+	li {
+		list-style-type: decimal;
+		padding-left: 15px;
+		font-size: 1.2rem;
+		margin-left: 30px;
+		margin-bottom: 20px;
+	}
+}
 // chapter 3 specific stuff.
 #heidis-room {
 	display: flex;
@@ -399,6 +408,14 @@ area:hover {
 		.outgoing, .received {
 			// background: #626f62;
 			background: #73948A;
+		}
+		.notification {
+			color: goldenrod;
+			display: block;
+			text-align: center;
+			padding-bottom: 5px;
+			margin: 20px;
+			border-bottom: 3px solid goldenrod;
 		}
 		.unread {
 			background: goldenrod;

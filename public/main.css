@@ -531,7 +531,7 @@ a.giant {
   color: #b082d0;
 }
 .page q.screen {
-  background: black;
+  background: #262726;
 }
 .page q.burnside, .page q.burnside.tagged:before {
   background: #7d4141;
@@ -608,6 +608,14 @@ a.giant {
 
 area:hover {
   background: orange;
+}
+
+ol li {
+  list-style-type: decimal;
+  padding-left: 15px;
+  font-size: 1.2rem;
+  margin-left: 30px;
+  margin-bottom: 20px;
 }
 
 #heidis-room {
@@ -740,6 +748,14 @@ area:hover {
 }
 .phone #call-history .outgoing, .phone #call-history .received, .phone #text-history .outgoing, .phone #text-history .received, .phone .thread .outgoing, .phone .thread .received {
   background: #73948A;
+}
+.phone #call-history .notification, .phone #text-history .notification, .phone .thread .notification {
+  color: goldenrod;
+  display: block;
+  text-align: center;
+  padding-bottom: 5px;
+  margin: 20px;
+  border-bottom: 3px solid goldenrod;
 }
 .phone #call-history .unread, .phone #text-history .unread, .phone .thread .unread {
   background: goldenrod;
